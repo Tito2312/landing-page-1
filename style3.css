@@ -1,16 +1,15 @@
 body {
     width: 99.1vw;
-    height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("/imgs/rose-petals.png");
+    background-image: url("rose-petals.png");
     background-size: cover;
     color: #fff;
 }
 
 header {
-    height: 10vh;
+    height: 15vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -20,7 +19,7 @@ header {
 
 .logo img {
     margin-left: 80px;
-    width: 200px; 
+    width: 200px;
 }
 
 nav ul {
@@ -45,7 +44,7 @@ nav a:hover{
 
 main {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     display: flex;
     flex-direction: row;
 
@@ -53,7 +52,7 @@ main {
 
 .content{
     width: 50%;
-    height: 80vh;
+    height: 70vh;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -92,7 +91,7 @@ h1{
 
 .login{
     width: 50%;
-    height: 80vh;
+    height: 70vh;
     padding: 30px;
     display: flex;
     flex-direction: column;

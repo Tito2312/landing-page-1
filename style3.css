@@ -1,0 +1,201 @@
+body {
+    width: 99.1vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("/imgs/rose-petals.png");
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    height: 10vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    margin-left: 80px;
+    width: 200px; 
+}
+
+nav ul {
+    margin-right: 50px;
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+nav li {
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content{
+    width: 50%;
+    height: 80vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    width: 85%;
+    height: 50%;
+}
+
+h1{
+    font-size: 62px;
+}
+
+.info p{
+    font-size: 24px;
+    margin: 8% 0;
+}
+
+.info button{
+    width: 12rem;
+    height: 4rem;
+    color: #fff;
+    font-size: 20px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 40px;
+}
+
+.info button:hover{
+    cursor: pointer;
+}
+
+
+.login{
+    width: 50%;
+    height: 80vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    display: none;
+    width: 45%;
+    height: 70%;
+    background-color: #06138487;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 18px;
+}
+
+.login-form h2{
+    height: 10%;
+}
+
+.form-group{
+    height: 15%;
+    width: 100%;
+    margin-left: 15%;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-group input{
+    width: 80%;
+    height: 100%;
+    background: none;
+    padding-top: 20px;
+    border: none;
+    outline: 0;
+    box-shadow: 0;
+    color: #fff;
+}
+
+.lbl{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 84%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+}
+
+.lbl::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1;
+    border-bottom: 2px solid #727272;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-lbl{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-group input:focus + .lbl .text-lbl,
+.form-group input:valid + .lbl .text-lbl{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #727272;
+}
+
+.form-group input:focus + .lbl::after,
+.form-group input:valid + .lbl::after{
+    transform: translateX(0%);
+}
+
+.btn-login{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-login button{
+    width: 95%;
+    height: 50%;
+    font-size: 18px;
+    border: #061384;
+    color: #fff;
+    background-color: #000957;
+}
+
+.btn-login button:hover{
+    cursor: pointer;
+}
+
+.forgot-password p a{
+    color: #fff;
+}

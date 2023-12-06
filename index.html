@@ -14,43 +14,73 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#footer">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="content">
-            <div class="info">
-                <h1>SAE SAS</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora itaque cupiditate suscipit nam. Quis, magni blanditiis! Voluptatem eius distinctio numquam, in dolorum, laboriosam non quasi animi dignissimos laborum quae impedit.<p>
-                <button id="btn-login">Iniciar sesión</button>
+        <div class="main">
+            <div class="content">
+                <div class="info">
+                    <h1>SAE SAS</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora itaque cupiditate suscipit nam. Quis, magni blanditiis! Voluptatem eius distinctio numquam, in dolorum, laboriosam non quasi animi dignissimos laborum quae impedit.<p>
+                    <button id="btn-login">Iniciar sesión</button>
+                </div>
+            </div>
+            <div class="login">
+                <form class="login-form" id="form">
+                    <h2 class="form-title">Ingresar</h2>
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label for="" class="lbl">
+                            <span class="text-lbl">Correo/Usuario</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" required>
+                        <label for="" class="lbl">
+                            <span class="text-lbl">Contraseña</span>
+                        </label>
+                    </div>
+                    <div class="btn-login">
+                        <button type="submit">Ingresar</button>
+                    </div>
+                    <div class="forgot-password">
+                        <p><a href="#">¿Olvidó su contraseña?</a></p>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="login">
-            <form class="login-form" id="form">
-                <h2 class="form-title">Ingresar</h2>
-                <div class="form-group">
-                    <input type="text" required>
-                    <label for="" class="lbl">
-                        <span class="text-lbl">Correo/Usuario</span>
-                    </label>
+        <div class="services" id="services">
+            <h2>Nuestros servicios</h2>
+            <div class="cards">
+                <div class="content-card">
+                    <h4>PuntoEdu</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam sed minus labore, quidem incidunt numquam reiciendis reprehenderit accusamus tenetur dolorum vitae neque est ex earum at sequi totam laboriosam.</p>
                 </div>
-                <div class="form-group">
-                    <input type="password" required>
-                    <label for="" class="lbl">
-                        <span class="text-lbl">Contraseña</span>
-                    </label>
+                <div class="content-card">
+                    <h4>SAE SAS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam sed minus labore, quidem incidunt numquam reiciendis reprehenderit accusamus tenetur dolorum vitae neque est ex earum at sequi totam laboriosam.</p>
                 </div>
-                <div class="btn-login">
-                    <button type="submit">Ingresar</button>
+                <div class="content-card">
+                    <h4>JUNO</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam sed minus labore, quidem incidunt numquam reiciendis reprehenderit accusamus tenetur dolorum vitae neque est ex earum at sequi totam laboriosam.</p>
                 </div>
-                <div class="forgot-password">
-                    <p><a href="#">¿Olvidó su contraseña?</a></p>
-                </div>
-            </form>
+            </div>
         </div>
     </main>
+    <footer id="footer">
+        <div class="contact">
+           <p>
+            Email : soporte@sistemasae.com
+           </p>
+        </div>
+        <div class="sae">SAE SAS</div>
+        <p>
+            Telefonos :+57 301 552 0667 - 302 293 5932
+        </p>
+    </footer>
 </body>
 <script src="app.js"></script>
 </html>
